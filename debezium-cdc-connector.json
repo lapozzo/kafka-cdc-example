@@ -1,0 +1,14 @@
+{
+  "name": "dummytable-connector-source",  
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector", 
+    "database.hostname": "postgres", 
+    "database.port": "5432", 
+    "database.user": "postgres", 
+    "database.password": "password", 
+    "database.dbname" : "dummy_database", 
+    "database.server.name": "dummy", 
+    "table.include.list": "public.dummy_table",
+    "plugin.name": "pgoutput"
+  }
+}
